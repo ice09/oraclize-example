@@ -1,6 +1,6 @@
-# Oraclize Example App
+# Create you own Oracle
 
-That's a sample application to demonstrate working with Oraclize in Ethereum Studio.
+This sample application is based on the https://github.com/ether-camp/oraclize-example of the Ethereum Studio
 
 * Clone the project to your workspace.
 * Select the project and start a sandbox. It will use Oraclize sandbox plugin with the following params (see ethereum.json):
