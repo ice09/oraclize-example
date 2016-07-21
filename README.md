@@ -7,6 +7,12 @@ This sample application is based on the <a href='https://github.com/ether-camp/o
 git clone https://github.com/ice09/oraclize-example.git
 cd oraclize-example
 ```
+* Start the web server for your own Oracle
+```
+cd web
+npm install http-server -g
+http-server
+```
 * Select the project and start a sandbox. It will use Oraclize sandbox plugin with the following params (see ethereum.json):
 ```
 "plugins": {
