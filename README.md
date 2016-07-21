@@ -4,10 +4,8 @@ This sample application is based on the <a href='https://github.com/ether-camp/o
 
 * Clone the project to your workspace.
 ```
-git clone https://github.com/ether-camp/ethereum-testing-reference
-cd ethereum-testing-reference
-npm install 
-npm test
+git clone https://github.com/ice09/oraclize-example.git
+cd oraclize-example
 ```
 * Select the project and start a sandbox. It will use Oraclize sandbox plugin with the following params (see ethereum.json):
 ```
