@@ -6,7 +6,7 @@ contract Contract is named("Contract"), mortal, usingOraclize {
   string public ETHXBT;
 
   function Contract() {
-    oraclize_setNetwork(networkID_consensys);
+    oraclize_setNetwork(networkID_morden);
   }
   
   function __callback(bytes32 myid, string result) {
@@ -14,7 +14,6 @@ contract Contract is named("Contract"), mortal, usingOraclize {
     if (msg.sender != oraclize_cbAddress()) throw;
     log0('set result');
     ETHXBT = result;
-    update();
   }
   
   function update() {
