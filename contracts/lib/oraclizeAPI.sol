@@ -55,7 +55,7 @@ contract usingOraclize is abstract {
     uint8 constant networkID_morden = 2;
     uint8 constant networkID_consensys = 161;
     
-    OraclizeAddrResolverI OAR = OraclizeAddrResolverI(0x1d11e5eae3112dbd44f99266872ff1d07c77dce8);
+    OraclizeAddrResolverI OAR = OraclizeAddrResolverI(0x1d3b2638a7cc9f2cb3d298a3da7a90b67e5506ed);
     
     OraclizeI oraclize;
     modifier oraclizeAPI {
@@ -68,8 +68,8 @@ contract usingOraclize is abstract {
         _
     }
     function oraclize_setNetwork(uint8 networkID) internal returns(bool){
-        if (networkID == networkID_mainnet) OAR = OraclizeAddrResolverI(0x1d11e5eae3112dbd44f99266872ff1d07c77dce8);
-        else if (networkID == networkID_testnet) OAR = OraclizeAddrResolverI(0x0ae06d5934fd75d214951eb96633fbd7f9262a7c);
+        if (networkID == networkID_mainnet) OAR = OraclizeAddrResolverI(0x1d3b2638a7cc9f2cb3d298a3da7a90b67e5506ed);
+        else if (networkID == networkID_testnet) OAR = OraclizeAddrResolverI(0x9efbea6358bed926b293d2ce63a730d6d98d43dd);
         else if (networkID == networkID_consensys) OAR = OraclizeAddrResolverI(0x20e12a1f859b3feae5fb2a0a32c18f5a65555bbf);
         else return false;
         return true;
