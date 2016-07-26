@@ -24,3 +24,11 @@ http-server
 * Open a dialog of contract `Contract` and call `update()` with value 100000000000000000 in advanced parameters.
 
 You will see requests and response in Oraclize Panel and contract logs in Ethereum Console.
+
+# Deploying to Morden
+
+* You can also deploy to Morden, you will have to change the networkID to 2 in ethereum.json and in the contract.sol constructor
+* Also, follow the instructions in the <a href='http://blockchainers.org/index.php/2016/07/26/create-your-own-…-and-oraclize-it/'>corresponding blog post</a>
+* For invocation in Morden, always use 1 Ether as value for all calls to bet() or update()
+
+
