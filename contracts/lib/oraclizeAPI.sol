@@ -129,8 +129,6 @@ contract usingOraclize is abstract {
         return oraclize.setProofType(proofP);
     }
 
-
-
     function parseAddr(string _a) internal returns (address){
         bytes memory tmp = bytes(_a);
         uint160 iaddr = 0;
@@ -247,8 +245,6 @@ contract usingOraclize is abstract {
         }
         return mint;
     }
-    
-
 
 }
 // </ORACLIZE_API>
