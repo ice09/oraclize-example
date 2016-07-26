@@ -9,7 +9,6 @@ cd oraclize-example
 ```
 * Start the web server for your own Oracle
 ```
-cd web
 npm install http-server -g
 http-server
 ```
